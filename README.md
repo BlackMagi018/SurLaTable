@@ -19,7 +19,8 @@ I was working out kind of a flow chart describing how i think the app should wor
   Lists the resturants that were returned by the algorithm and allows selection of restaurant
   
 5-i
-  Once a restuarant is selected it displays a welcome page with an Image of the restaurant with its name and average wait time. A           description of the place and buttons to view menu and to place order.
+  Once a restuarant is selected it displays a welcome page with an Image of the restaurant with its name and average wait time. A description of the place and buttons to view menu and to place order.
+  
 --------------------------------------------------------------------------------------------------------------------------------------  
 3-ii
     List of Criteria that can be used to search for a restuarant by
@@ -36,7 +37,8 @@ I was working out kind of a flow chart describing how i think the app should wor
   Lists the resturants that were returned by the algorithm and allows selection of restaurant
   
 6-ii
-  Once a restuarant is selected it displays a welcome page with an Image of the restaurant with its name and average wait time. A         description of the place and buttons to view menu and to place order.
+  Once a restuarant is selected it displays a welcome page with an Image of the restaurant with its name and average wait time. A description of the place and buttons to view menu and to place order.
+  
 --------------------------------------------------------------------------------------------------------------------------------------- 
 
   
