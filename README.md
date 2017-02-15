@@ -10,7 +10,9 @@ I was working out kind of a flow chart describing how i think the app should wor
 2. Once the users login they're taken to a page with three options
 
    i. Feed Me Now  - Brings up all the supported restaurants in a 10 mile area and allows user to find something to eat right away
+   
    ii. Find A Table - Allows users to search for restaurants based on Location, Cuisine, Price, or Dress Code.
+   
    iii. Plan A Meal  - Users input a specific restuarant, reserve a table and if desired view menu and preorder their meal.
    
 3-i
@@ -25,10 +27,15 @@ I was working out kind of a flow chart describing how i think the app should wor
 --------------------------------------------------------------------------------------------------------------------------------------  
 3-ii
     List of Criteria that can be used to search for a restuarant by
+
     a. Location/Distance
+    
     b. Cuisine
+    
     c. Price
+    
     d. Dress Code
+    
     Then click search to run the search
     
 4-ii
