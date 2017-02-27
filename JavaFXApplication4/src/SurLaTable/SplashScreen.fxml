@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="275.0" layoutY="172.0" prefHeight="456.0" prefWidth="650.0" scaleX="1.9" scaleY="1.8" >
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/L:/Documents/NetBeansProjects/JavaFXApplication4/src/javafxapplication4/Logo.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: gray;">
+         <children>
+            <Text disable="true" fill="MAROON" layoutX="20.0" layoutY="122.0" stroke="BLACK" strokeType="OUTSIDE" text="Sur La Table" textAlignment="CENTER" wrappingWidth="1161.7548828125">
+               <font>
+                  <Font name="French Script MT" size="130.0" />
+               </font>
+            </Text>
+            <Line endX="1160.0" fill="BLACK" layoutX="20.0" layoutY="187.0" />
+            <Line endX="560.0" layoutX="342.0" layoutY="469.0" rotate="90.0" strokeWidth="2.0" />
+            <Text fill="MAROON" layoutX="155.0" layoutY="263.0" stroke="BLACK" strokeType="OUTSIDE" text="User Login">
+               <font>
+                  <Font name="Times New Roman" size="74.0" />
+               </font>
+            </Text>
+            <Text fill="MAROON" layoutX="796.0" layoutY="263.0" stroke="BLACK" strokeType="OUTSIDE" text="Register" wrappingWidth="239.94140625">
+               <font>
+                  <Font name="Times New Roman" size="72.0" />
+               </font>
+            </Text>
+            <TextField layoutX="245.0" layoutY="300.0" prefHeight="61.0" prefWidth="306.0" />
+            <Label layoutX="109.0" layoutY="313.0" text="Username:">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <Label layoutX="116.0" layoutY="411.0" text="Password:">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <PasswordField layoutX="245.0" layoutY="398.0" prefHeight="61.0" prefWidth="306.0" />
+            <Button layoutX="271.0" layoutY="547.0" mnemonicParsing="false" text="Login" textAlignment="CENTER">
+               <font>
+                  <Font size="36.0" />
+               </font></Button>
+            <Label layoutX="757.0" layoutY="300.0" text="Full Name:">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <Label layoutX="757.0" layoutY="344.0" text="Username:">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <Label layoutX="757.0" layoutY="398.0" prefHeight="35.0" prefWidth="112.0" text="Password:">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <Label layoutX="672.0" layoutY="451.0" text="Confirm Password:">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <TextField layoutX="887.0" layoutY="300.0" prefHeight="35.0" prefWidth="197.0" />
+            <Button layoutX="827.0" layoutY="547.0" mnemonicParsing="false" text="Register" textAlignment="CENTER">
+               <font>
+                  <Font size="36.0" />
+               </font></Button>
+            <TextField layoutX="887.0" layoutY="349.0" prefHeight="35.0" prefWidth="197.0" />
+            <TextField layoutX="887.0" layoutY="398.0" prefHeight="35.0" prefWidth="197.0" />
+            <TextField layoutX="887.0" layoutY="451.0" prefHeight="35.0" prefWidth="197.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
