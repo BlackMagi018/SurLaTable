@@ -7,20 +7,19 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1200.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SurLaTable.SelectorController">
    <children>
       <TitledPane animated="false" collapsible="false" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: GRAY;" text="Sur La Table" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <content>
             <HBox prefWidth="1200.0" style="-fx-background-color: Gray;">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="710.0" prefWidth="600.0" style="-fx-background-color: SILVER; -fx-border-color: BLACK;" text="Feed Me Now" textAlignment="CENTER" textFill="MAROON" wrapText="true">
+                  <Button fx:id="FMN" mnemonicParsing="false" onAction="#FeedMeNow" prefHeight="710.0" prefWidth="600.0" style="-fx-background-color: SILVER; -fx-border-color: BLACK;" text="Feed Me Now" textAlignment="CENTER" textFill="MAROON" wrapText="true">
                      <font>
                         <Font size="96.0" />
                      </font>
                   </Button>
                   <Button mnemonicParsing="false" style="-fx-background-color: GRAY;" textAlignment="CENTER" textFill="GREY" />
-                  <Button mnemonicParsing="false" prefHeight="710.0" prefWidth="600.0" style="-fx-background-color: Silver; -fx-border-color: BLACK;" text="Find A Table" textAlignment="CENTER" textFill="MAROON" wrapText="true">
+                  <Button fx:id="FAT" mnemonicParsing="false" onAction="#FindATable" prefHeight="710.0" prefWidth="600.0" style="-fx-background-color: Silver; -fx-border-color: BLACK;" text="Find A Table" textAlignment="CENTER" textFill="MAROON" wrapText="true">
                      <font>
                         <Font size="96.0" />
                      </font>
