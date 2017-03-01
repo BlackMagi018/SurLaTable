@@ -10,6 +10,7 @@ import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.DatePicker;
 
@@ -26,6 +27,8 @@ public class SearchStartController implements Initializable {
     private DatePicker Date;
     @FXML
     private ChoiceBox Local;
+    @FXML
+    private Button SearchBtn;
     
     @FXML
     private void setLocal(){
