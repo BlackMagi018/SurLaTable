@@ -8,36 +8,41 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1200.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <TitledPane animated="false" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: gray;" text="untitled" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: gray;">
                <children>
-                  <DatePicker layoutX="548.0" layoutY="308.0" />
-                  <ChoiceBox layoutX="548.0" layoutY="214.0" prefWidth="150.0" />
+                  <DatePicker layoutX="605.0" layoutY="403.0" promptText="Choose A Day" />
+                  <ChoiceBox layoutX="605.0" layoutY="303.0" prefWidth="150.0" />
                   <Text disable="true" fill="MAROON" layoutX="18.0" layoutY="122.0" stroke="BLACK" strokeType="OUTSIDE" text="Sur La Table" textAlignment="CENTER" wrappingWidth="1161.7548828125">
                      <font>
                         <Font name="French Script MT" size="130.0" />
                      </font>
                   </Text>
                   <Line endX="1160.0" fill="BLACK" layoutX="17.0" layoutY="175.0" />
-                  <Label layoutX="423.0" layoutY="206.0" text="Cuisine">
+                  <Label layoutX="480.0" layoutY="300.0" text="Cuisine" textFill="MAROON">
                      <font>
-                        <Font size="28.0" />
+                        <Font name="Times New Roman" size="28.0" />
                      </font>
                   </Label>
-                  <Label layoutX="300.0" layoutY="300.0" text="Reservation TIme">
+                  <Label layoutX="342.0" layoutY="400.0" text="Date of Reservation" textFill="MAROON">
                      <font>
-                        <Font size="28.0" />
+                        <Font name="Times New Roman" size="28.0" />
                      </font>
                   </Label>
-                  <Label layoutX="407.0" layoutY="387.0" text="Location">
+                  <Label layoutX="446.0" layoutY="500.0" text="Restaurant" textFill="MAROON">
                      <font>
-                        <Font size="28.0" />
+                        <Font name="Times New Roman" size="28.0" />
                      </font>
                   </Label>
+                  <ChoiceBox layoutX="605.0" layoutY="503.0" prefWidth="150.0" />
+                  <Text fill="MAROON" layoutX="354.0" layoutY="246.0" stroke="BLACK" strokeType="OUTSIDE" text="What Table are you Looking For?">
+                     <font>
+                        <Font name="Times New Roman" size="36.0" />
+                     </font>
+                  </Text>
                </children>
             </AnchorPane>
         </content>

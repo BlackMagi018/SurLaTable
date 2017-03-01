@@ -8,7 +8,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SurLaTable.LoginController">
    <children>
       <Pane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: gray;">
          <children>
@@ -29,7 +29,7 @@
                   <Font name="Times New Roman" size="72.0" />
                </font>
             </Text>
-            <TextField layoutX="245.0" layoutY="300.0" prefHeight="61.0" prefWidth="306.0" />
+            <TextField fx:id="LogUser" layoutX="245.0" layoutY="300.0" prefHeight="61.0" prefWidth="306.0" />
             <Label layoutX="109.0" layoutY="313.0" text="Username:">
                <font>
                   <Font size="24.0" />
@@ -38,8 +38,8 @@
                <font>
                   <Font size="24.0" />
                </font></Label>
-            <PasswordField layoutX="245.0" layoutY="398.0" prefHeight="61.0" prefWidth="306.0" />
-            <Button layoutX="271.0" layoutY="547.0" mnemonicParsing="false" text="Login" textAlignment="CENTER">
+            <PasswordField fx:id="LogPass" layoutX="245.0" layoutY="398.0" prefHeight="61.0" prefWidth="306.0" />
+            <Button id="LogInBtn" fx:id="LogInBtn" layoutX="271.0" layoutY="547.0" mnemonicParsing="false" onAction="#handleLogin" text="Login" textAlignment="CENTER">
                <font>
                   <Font size="36.0" />
                </font></Button>
@@ -59,14 +59,19 @@
                <font>
                   <Font size="24.0" />
                </font></Label>
-            <TextField layoutX="887.0" layoutY="300.0" prefHeight="35.0" prefWidth="197.0" />
-            <Button layoutX="827.0" layoutY="547.0" mnemonicParsing="false" text="Register" textAlignment="CENTER">
+            <TextField fx:id="RegFN" layoutX="887.0" layoutY="300.0" prefHeight="35.0" prefWidth="197.0" />
+            <Button id="RegBtn" fx:id="RegBtn" layoutX="827.0" layoutY="547.0" mnemonicParsing="false" onAction="#handleRegister" text="Register" textAlignment="CENTER">
                <font>
                   <Font size="36.0" />
                </font></Button>
-            <TextField layoutX="887.0" layoutY="349.0" prefHeight="35.0" prefWidth="197.0" />
-            <TextField layoutX="887.0" layoutY="398.0" prefHeight="35.0" prefWidth="197.0" />
-            <TextField layoutX="887.0" layoutY="451.0" prefHeight="35.0" prefWidth="197.0" />
+            <TextField fx:id="RegUser" layoutX="887.0" layoutY="349.0" prefHeight="35.0" prefWidth="197.0" />
+            <TextField fx:id="RegPass1" layoutX="887.0" layoutY="398.0" prefHeight="35.0" prefWidth="197.0" />
+            <TextField fx:id="RegPass2" layoutX="887.0" layoutY="451.0" prefHeight="35.0" prefWidth="197.0" />
+            <Text fx:id="ErrorTxt" layoutX="322.0" layoutY="508.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
          </children>
       </Pane>
    </children>

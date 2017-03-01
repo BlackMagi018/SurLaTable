@@ -11,16 +11,20 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SurLaTable.SplashScreenController">
    <children>
-      <Pane layoutX="275.0" layoutY="172.0" prefHeight="456.0" prefWidth="650.0" scaleX="1.9" scaleY="1.8" >
-         <effect>
-            <ImageInput>
-               <source>
-                  <Image url="file:/L:/Documents/NetBeansProjects/JavaFXApplication4/src/javafxapplication4/Logo.png" />
-               </source>
-            </ImageInput>
-         </effect>
+      <Pane fx:id="Logo" layoutX="275.0" layoutY="172.0" prefHeight="456.0" prefWidth="650.0" scaleX="1.9" scaleY="1.8">
+         <children>
+            <Button mnemonicParsing="false" onAction="#Start" prefHeight="456.0" prefWidth="650.0" text="Button">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="file:/L:/Documents/NetBeansProjects/JavaFXApplication4/src/SurLaTable/Logo.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Button>
+         </children>
       </Pane>
    </children>
 </AnchorPane>

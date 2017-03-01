@@ -20,7 +20,7 @@ public class JavaFXApplication4 extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("SearchStart.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("SplashScreen.fxml"));
         
         Scene Splash = new Scene(root);
         
@@ -30,6 +30,8 @@ public class JavaFXApplication4 extends Application {
         
         
     }
+    
+    
 
     /**
      * @param args the command line arguments
