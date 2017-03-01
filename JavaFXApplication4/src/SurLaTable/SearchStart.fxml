@@ -14,7 +14,7 @@
          <children>
              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: gray;">
                   <children>
-                     <ChoiceBox fx:id="Cuisine" layoutX="605.0" layoutY="303.0" onInputMethodTextChanged="#setLocal" prefWidth="150.0" />
+                     <ChoiceBox fx:id="Cuisine" layoutX="605.0" layoutY="303.0" prefWidth="150.0" />
                      <DatePicker fx:id="Date" layoutX="605.0" layoutY="403.0" promptText="Choose A Day" />                  
                      <Text disable="true" fill="MAROON" layoutX="18.0" layoutY="122.0" stroke="BLACK" strokeType="OUTSIDE" text="Sur La Table" textAlignment="CENTER" wrappingWidth="1161.7548828125">
                         <font>
@@ -45,6 +45,7 @@
                      </Text>
                   </children>
                </AnchorPane>
+            <Button fx:id="SearchBtn" layoutX="774.0" layoutY="303.0" mnemonicParsing="false" onAction="#setLocal" text="Find Restaurants" />
          </children>
       </Pane>
    </children>
