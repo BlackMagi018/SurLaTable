@@ -31,6 +31,7 @@ public class SelectorController implements Initializable {
     @FXML
     private Button FAT;
     
+    
     @FXML
     private void FeedMeNow(ActionEvent event) throws IOException{
      Stage stage; 

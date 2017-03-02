@@ -19,7 +19,11 @@ public class Food {
     private final SimpleStringProperty time = new SimpleStringProperty("");
     private final SimpleStringProperty price = new SimpleStringProperty("");
     
-    public Food(String n, String c,String t, int p){
+    public Food() {
+        this("", "", "","");
+    }
+    
+    public Food(String n, String c,String t, String p){
      setName(n);
      setCuisine(c);
      setTime(t);
