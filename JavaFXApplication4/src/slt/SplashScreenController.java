@@ -20,21 +20,26 @@ import javafx.stage.Stage;
 
 /**
  * FXML Controller class
- *
- * @author Jeremiah
+ * @author Jeremiah Logan, Carter Garety, Jordan Ward
  */
 public class SplashScreenController implements Initializable {
-
+    
     @FXML
+    /*Pane to hold the button*/
     Pane logo;
+    
     @FXML
+    /*AnchorPane to hold the Pane*/
     AnchorPane AP;
     
     @FXML
+    /**
+     * Creates the next scene in the flow
+     * when the SplashScreen is clicked on
+     */
     private void start(ActionEvent event) throws IOException{
      Stage stage; 
      Parent root;
-
     //get reference to the button's stage         
     stage=(Stage) logo.getScene().getWindow();
     //load up OTHER FXML document

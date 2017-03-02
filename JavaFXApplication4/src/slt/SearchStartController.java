@@ -17,7 +17,7 @@ import javafx.scene.control.DatePicker;
 /**
  * FXML Controller class
  *
- * @author Jeremiah
+ * @author Jeremiah Logan, Carter Garety, Jordan Ward
  */
 public class SearchStartController implements Initializable {
 
@@ -31,6 +31,11 @@ public class SearchStartController implements Initializable {
     private Button searchBtn;
     
     @FXML
+    /**
+     * Enters the restaurant's the fit the
+     * requested cuisine into the Restaurant
+     * dropdown menu
+     */
     private void setLocal(){
         String s = (String)cuisine.getValue();
         switch(s){
@@ -61,6 +66,7 @@ public class SearchStartController implements Initializable {
             default: break;
         }
     }
+    
     /**
      * Initializes the controller class.
      */

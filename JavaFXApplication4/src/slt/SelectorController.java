@@ -20,21 +20,26 @@ import javafx.stage.Stage;
 /**
  * FXML Controller class
  *
- * @author Jeremiah
+ * @author Jeremiah Logan, Carter Garety, Jordan Ward
  */
 public class SelectorController implements Initializable {
 
     @FXML
+    /*Feed Me Now Button */
     private Button fmn;
+    
     @FXML
+    /*Find A Table Button*/
     private Button fat;
     
-    
     @FXML
+    /**
+     * Creates the next scene in the flow
+     * when the button is clicked on
+     */
     private void feedMeNow(ActionEvent event) throws IOException{
      Stage stage; 
      Parent root;
-
     //get reference to the button's stage         
     stage=(Stage) fmn.getScene().getWindow();
     //load up OTHER FXML document
@@ -46,10 +51,13 @@ public class SelectorController implements Initializable {
     }
     
     @FXML
+    /**
+     * Creates the next scene in the flow
+     * when the button is clicked on
+     */
     private void findATable(ActionEvent event) throws IOException{
      Stage stage; 
      Parent root;
-
     //get reference to the button's stage         
     stage=(Stage) fat.getScene().getWindow();
     //load up OTHER FXML document

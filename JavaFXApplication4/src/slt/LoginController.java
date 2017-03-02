@@ -23,36 +23,48 @@ import javafx.stage.Stage;
 /**
  * FXML Controller class
  *
- * @author Jeremiah
+ * @author Jeremiah Logan, Carter Garety, Jordan Ward
  */
 public class LoginController implements Initializable {
     
-    
+    /*List of authorized users and their passwords */
     List<String>users;
     @FXML
+    /*Text Field for Registered Users Login */
     private TextField logUser;
     @FXML
+    /*Text Field for Registered Users Password */
     private PasswordField logPass;
     @FXML
+    /*Text Field for New Users Full Name */
     private TextField regFN;
     @FXML
+    /*Text Field for New Users Username */
     private TextField regUser;
     @FXML
+    /*Text Field for New Users Password */
     private TextField regPass1;
     @FXML
+    /*Text Field to confirm Password */
     private TextField regPass2;
     @FXML
+    /*Login Button */
     private Button logInBtn;
     @FXML
+    /*Register Button */
     private Button regBtn;
     @FXML
+    /*Text object to display errors */
     private Text errorTxt;
     
     @FXML
+    /**
+     * Creates the next scene in the flow
+     * when the button is clicked on
+     */
     private void handleLogin(ActionEvent event) throws IOException{
      Stage stage; 
      Parent root;
-     
      if(event.getSource()==logInBtn){
          String s = logUser.getText()+":"+logPass.getText();
         if(users.contains(s) == true){ 
@@ -72,10 +84,13 @@ public class LoginController implements Initializable {
     }
     
     @FXML
+    /**
+     * Creates the next scene in the flow
+     * when the button is clicked on
+     */
     private void handleRegister(ActionEvent event) throws IOException{
      Stage stage = new Stage(); 
      Parent root;
-     
      if(event.getSource()==regBtn){
          if(regFN.getLength() > 5 && regUser.getLength() > 5 && regPass1.getLength() > 8 && regPass1.getText().equals(regPass2.getText())){
          String s = regUser.getText()+":"+regPass2.getText();
@@ -91,11 +106,9 @@ public class LoginController implements Initializable {
         }
          else{
              errorTxt.setText("Unable to Register:Missing Parameters");
-         }
+             }
+        }
     }
-    }
-    
-    
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
