@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package slt;
 
 import java.io.IOException;
@@ -42,12 +37,15 @@ public class LoginController implements Initializable {
     @FXML
     /*Text Field for New Users Full Name */
     private TextField regFN;
+    
     @FXML
     /*Text Field for New Users Username */
     private TextField regUser;
+    
     @FXML
     /*Text Field for New Users Password */
     private TextField regPass1;
+    
     @FXML
     /*Text Field to confirm Password */
     private TextField regPass2;
@@ -122,6 +120,5 @@ public class LoginController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         List<String>users = new ArrayList<String>();
         users.add("User:Pass");
-    }
-    
+    } 
 }
