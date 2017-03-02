@@ -12,7 +12,7 @@ import javafx.fxml.Initializable;
 /**
  * FXML Controller class
  *
- * @author Jeremiah
+ * @author Jeremiah Logan, Carter Garety, Jordan Ward
  */
 public class FindATableController implements Initializable {
 
