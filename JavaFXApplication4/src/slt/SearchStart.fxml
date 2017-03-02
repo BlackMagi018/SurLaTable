@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SurLaTable.SearchStartController">
+   <children>
+      <Pane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: gray;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="searchBtn" layoutX="760.0" layoutY="303.0" mnemonicParsing="false" onAction="#setLocal" prefHeight="25.0" prefWidth="104.0" text="Find Restaurants" />
+            <Button layoutX="539.0" layoutY="479.0" mnemonicParsing="false" text="Find A Table">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+               <ChoiceBox fx:id="cuisine" layoutX="586.0" layoutY="303.0" prefWidth="150.0" />
+               <DatePicker fx:id="date" layoutX="586.0" layoutY="359.0" promptText="Choose A Day" />                  
+               <Text disable="true" fill="MAROON" layoutX="19.0" layoutY="122.0" stroke="BLACK" strokeType="OUTSIDE" text="Sur La Table" textAlignment="CENTER" wrappingWidth="1161.7548828125">
+                  <font>
+                     <Font name="French Script MT" size="130.0" />
+                  </font>
+               </Text>
+               <Line endX="1160.0" fill="BLACK" layoutX="20.0" layoutY="175.0" />
+               <Label layoutX="458.0" layoutY="300.0" text="Cuisine" textFill="MAROON">
+                  <font>
+                     <Font name="Times New Roman" size="28.0" />
+                  </font>
+               </Label>
+               <Label layoutX="320.0" layoutY="356.0" text="Date of Reservation" textFill="MAROON">
+                  <font>
+                     <Font name="Times New Roman" size="28.0" />
+                  </font>
+               </Label>
+               <Label layoutX="419.0" layoutY="413.0" text="Restaurant" textFill="MAROON">
+                  <font>
+                     <Font name="Times New Roman" size="28.0" />
+                  </font>
+               </Label>
+               <ChoiceBox fx:id="local" layoutX="586.0" layoutY="416.0" prefWidth="150.0" />
+               <Text fill="MAROON" layoutX="355.0" layoutY="263.0" stroke="BLACK" strokeType="OUTSIDE" text="What Table are you Looking For?">
+                  <font>
+                     <Font name="Times New Roman" size="36.0" />
+                  </font>
+               </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
