@@ -14,6 +14,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
@@ -26,7 +27,7 @@ public class SplashScreenController implements Initializable {
     
     @FXML
     /*Pane to hold the button*/
-    Pane logo;
+    Button logo;
     
     @FXML
     /*AnchorPane to hold the Pane*/
@@ -43,7 +44,7 @@ public class SplashScreenController implements Initializable {
     //get reference to the button's stage         
     stage=(Stage) logo.getScene().getWindow();
     //load up OTHER FXML document
-    root = FXMLLoader.load(getClass().getResource("Login.fxml"));
+    root = FXMLLoader.load(getClass().getResource("Selector.fxml"));
     //create a new scene with root and set the stage
     Scene scene = new Scene(root);
     stage.setScene(scene);

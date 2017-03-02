@@ -8,7 +8,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SurLaTable.LoginController">
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="slt.LoginController">
    <children>
       <Pane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: gray;">
          <children>
@@ -29,7 +29,7 @@
                   <Font name="Times New Roman" size="72.0" />
                </font>
             </Text>
-            <TextField fx:id="LogUser" layoutX="245.0" layoutY="300.0" prefHeight="61.0" prefWidth="306.0" />
+            <TextField fx:id="logUser" layoutX="245.0" layoutY="300.0" prefHeight="61.0" prefWidth="306.0" />
             <Label layoutX="109.0" layoutY="313.0" text="Username:">
                <font>
                   <Font size="24.0" />
@@ -39,7 +39,7 @@
                   <Font size="24.0" />
                </font></Label>
             <PasswordField fx:id="logPass" layoutX="245.0" layoutY="398.0" prefHeight="61.0" prefWidth="306.0" />
-            <Button id="logInBtn" fx:id="LogInBtn" layoutX="271.0" layoutY="547.0" mnemonicParsing="false" onAction="#handleLogin" text="Login" textAlignment="CENTER">
+            <Button fx:id="logInBtn" layoutX="271.0" layoutY="547.0" mnemonicParsing="false" onAction="#handleLogin" text="Login" textAlignment="CENTER">
                <font>
                   <Font size="36.0" />
                </font></Button>
@@ -60,7 +60,7 @@
                   <Font size="24.0" />
                </font></Label>
             <TextField fx:id="regFN" layoutX="887.0" layoutY="300.0" prefHeight="35.0" prefWidth="197.0" />
-            <Button id="regBtn" fx:id="RegBtn" layoutX="827.0" layoutY="547.0" mnemonicParsing="false" onAction="#handleRegister" text="Register" textAlignment="CENTER">
+            <Button fx:id="regBtn" layoutX="827.0" layoutY="547.0" mnemonicParsing="false" onAction="#handleRegister" text="Register" textAlignment="CENTER">
                <font>
                   <Font size="36.0" />
                </font></Button>

@@ -28,13 +28,17 @@ import javafx.stage.Stage;
 public class LoginController implements Initializable {
     
     /*List of authorized users and their passwords */
+    @FXML
     List<String>users;
-    @FXML
+    
     /*Text Field for Registered Users Login */
-    private TextField logUser;
     @FXML
-    /*Text Field for Registered Users Password */
+    private TextField logUser;
+    
+    /*Text Field for Registered Users Password */    
+    @FXML
     private PasswordField logPass;
+    
     @FXML
     /*Text Field for New Users Full Name */
     private TextField regFN;
@@ -47,9 +51,11 @@ public class LoginController implements Initializable {
     @FXML
     /*Text Field to confirm Password */
     private TextField regPass2;
-    @FXML
+    
     /*Login Button */
+    @FXML    
     private Button logInBtn;
+    
     @FXML
     /*Register Button */
     private Button regBtn;
@@ -77,9 +83,10 @@ public class LoginController implements Initializable {
         stage.setScene(scene);
         stage.show();
         }
-        else{
+        else
+        {
             errorTxt.setText("Username/Password Not Found");
-            }
+        }
         }
     }
     
@@ -89,10 +96,10 @@ public class LoginController implements Initializable {
      * when the button is clicked on
      */
     private void handleRegister(ActionEvent event) throws IOException{
-     Stage stage = new Stage(); 
+     Stage stage; 
      Parent root;
      if(event.getSource()==regBtn){
-         if(regFN.getLength() > 5 && regUser.getLength() > 5 && regPass1.getLength() > 8 && regPass1.getText().equals(regPass2.getText())){
+         if(regFN.getLength() > 5 && regUser.getLength() > 5 && regPass1.getLength() >= 8 && regPass1.getText().equals(regPass2.getText())){
          String s = regUser.getText()+":"+regPass2.getText();
          users.add(s);
         //get reference to the button's stage
@@ -104,10 +111,11 @@ public class LoginController implements Initializable {
         stage.setScene(scene);
         stage.show();   
         }
-         else{
+        else
+        {
              errorTxt.setText("Unable to Register:Missing Parameters");
-             }
         }
+      }
     }
 
     @Override
