@@ -20,7 +20,7 @@ public class SLT extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("FeedMeNow.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("SplashScreen.fxml"));
         
         Scene Splash = new Scene(root);
         
