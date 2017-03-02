@@ -19,7 +19,7 @@
                <effect>
                   <ImageInput>
                      <source>
-                        <Image url="file:/L:/Documents/NetBeansProjects/JavaFXApplication4/src/SurLaTable/Logo.png" />
+                        <Image url="file:/C:/Users/Jeremiah/Documents/NetBeansProjects/SurLaTable/JavaFXApplication4/src/slt/logo.png" />
                      </source>
                   </ImageInput>
                </effect>
