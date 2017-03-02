@@ -22,42 +22,43 @@ import javafx.scene.control.DatePicker;
 public class SearchStartController implements Initializable {
 
     @FXML
-    private ChoiceBox Cuisine;
+    private ChoiceBox cuisine;
     @FXML
-    private DatePicker Date;
+    private DatePicker date;
     @FXML
-    private ChoiceBox Local;
+    private ChoiceBox local;
     @FXML
-    private Button SearchBtn;
+    private Button searchBtn;
     
     @FXML
     private void setLocal(){
-        String s = (String)Cuisine.getValue();
+        String s = (String)cuisine.getValue();
         switch(s){
-            case "American": Local.setItems(FXCollections.observableArrayList
+            case "American": local.setItems(FXCollections.observableArrayList
             ("Buffalo Wild Wings","Outback Steakhouse","Red Lobster"));
             break;
-            case "Chinese": Local.setItems(FXCollections.observableArrayList
+            case "Chinese": local.setItems(FXCollections.observableArrayList
             ("Panda Express","PF Chang's","Panda One"));
             break;
-            case "Greek": Local.setItems(FXCollections.observableArrayList
+            case "Greek": local.setItems(FXCollections.observableArrayList
             ("Sheshco Grill","Zesty Gyros","Bosna Express","Chicago Style Gyro"));
             break;
-            case "Italian": Local.setItems(FXCollections.observableArrayList
+            case "Italian": local.setItems(FXCollections.observableArrayList
             ("Mangiamo","Osteria Rossa","Uccello's","Peppino's Pizzeria"));
             break;
-            case "Japanese": Local.setItems(FXCollections.observableArrayList
+            case "Japanese": local.setItems(FXCollections.observableArrayList
             ("Mizu Sushi","Maru Sushi","Sushi Yama"));
             break;
-            case "Mediterranean": Local.setItems(FXCollections.observableArrayList
+            case "Mediterranean": local.setItems(FXCollections.observableArrayList
             ("Parsley Mediterranean Grill","Shiraz Grille","Le Kabob"));
             break;
-            case "Mexican": Local.setItems(FXCollections.observableArrayList
+            case "Mexican": local.setItems(FXCollections.observableArrayList
             ("El Aztecas","On the Border","Cantina Grill"));
             break;
-            case "Thai": Local.setItems(FXCollections.observableArrayList
+            case "Thai": local.setItems(FXCollections.observableArrayList
             ("Aroy Thai","Erb Thai","Lai Thai Kitchen"));
             break;
+            default: break;
         }
     }
     /**
@@ -65,7 +66,7 @@ public class SearchStartController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        Cuisine.setItems(FXCollections.observableArrayList
+        cuisine.setItems(FXCollections.observableArrayList
         ("American","Chinese","Greek","Italian","Japanese","Mediterranean","Mexican","Thai"));
                 
     }    

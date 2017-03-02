@@ -26,17 +26,17 @@ import javafx.stage.Stage;
 public class SplashScreenController implements Initializable {
 
     @FXML
-    Pane Logo;
+    Pane logo;
     @FXML
     AnchorPane AP;
     
     @FXML
-    private void Start(ActionEvent event) throws IOException{
+    private void start(ActionEvent event) throws IOException{
      Stage stage; 
      Parent root;
 
     //get reference to the button's stage         
-    stage=(Stage) Logo.getScene().getWindow();
+    stage=(Stage) logo.getScene().getWindow();
     //load up OTHER FXML document
     root = FXMLLoader.load(getClass().getResource("Login.fxml"));
     //create a new scene with root and set the stage

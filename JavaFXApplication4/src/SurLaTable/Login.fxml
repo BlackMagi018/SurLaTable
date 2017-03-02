@@ -38,8 +38,8 @@
                <font>
                   <Font size="24.0" />
                </font></Label>
-            <PasswordField fx:id="LogPass" layoutX="245.0" layoutY="398.0" prefHeight="61.0" prefWidth="306.0" />
-            <Button id="LogInBtn" fx:id="LogInBtn" layoutX="271.0" layoutY="547.0" mnemonicParsing="false" onAction="#handleLogin" text="Login" textAlignment="CENTER">
+            <PasswordField fx:id="logPass" layoutX="245.0" layoutY="398.0" prefHeight="61.0" prefWidth="306.0" />
+            <Button id="logInBtn" fx:id="LogInBtn" layoutX="271.0" layoutY="547.0" mnemonicParsing="false" onAction="#handleLogin" text="Login" textAlignment="CENTER">
                <font>
                   <Font size="36.0" />
                </font></Button>
@@ -59,15 +59,15 @@
                <font>
                   <Font size="24.0" />
                </font></Label>
-            <TextField fx:id="RegFN" layoutX="887.0" layoutY="300.0" prefHeight="35.0" prefWidth="197.0" />
-            <Button id="RegBtn" fx:id="RegBtn" layoutX="827.0" layoutY="547.0" mnemonicParsing="false" onAction="#handleRegister" text="Register" textAlignment="CENTER">
+            <TextField fx:id="regFN" layoutX="887.0" layoutY="300.0" prefHeight="35.0" prefWidth="197.0" />
+            <Button id="regBtn" fx:id="RegBtn" layoutX="827.0" layoutY="547.0" mnemonicParsing="false" onAction="#handleRegister" text="Register" textAlignment="CENTER">
                <font>
                   <Font size="36.0" />
                </font></Button>
-            <TextField fx:id="RegUser" layoutX="887.0" layoutY="349.0" prefHeight="35.0" prefWidth="197.0" />
-            <TextField fx:id="RegPass1" layoutX="887.0" layoutY="398.0" prefHeight="35.0" prefWidth="197.0" />
-            <TextField fx:id="RegPass2" layoutX="887.0" layoutY="451.0" prefHeight="35.0" prefWidth="197.0" />
-            <Text fx:id="ErrorTxt" layoutX="322.0" layoutY="508.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">
+            <TextField fx:id="regUser" layoutX="887.0" layoutY="349.0" prefHeight="35.0" prefWidth="197.0" />
+            <TextField fx:id="regPass1" layoutX="887.0" layoutY="398.0" prefHeight="35.0" prefWidth="197.0" />
+            <TextField fx:id="regPass2" layoutX="887.0" layoutY="451.0" prefHeight="35.0" prefWidth="197.0" />
+            <Text fx:id="errorTxt" layoutX="322.0" layoutY="508.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">
                <font>
                   <Font size="20.0" />
                </font>

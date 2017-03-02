@@ -27,37 +27,38 @@ import java.util.*;
  * @author Jeremiah
  */
 public class LoginController implements Initializable {
+    
+    
+    List<String>users;
     @FXML
-    List<String>Users = new ArrayList<String>();
+    private TextField logUser;
     @FXML
-    private TextField LogUser;
+    private PasswordField logPass;
     @FXML
-    private PasswordField LogPass;
+    private TextField regFN;
     @FXML
-    private TextField RegFN;
+    private TextField regUser;
     @FXML
-    private TextField RegUser;
+    private TextField regPass1;
     @FXML
-    private TextField RegPass1;
+    private TextField regPass2;
     @FXML
-    private TextField RegPass2;
+    private Button logInBtn;
     @FXML
-    private Button LogInBtn;
+    private Button regBtn;
     @FXML
-    private Button RegBtn;
-    @FXML
-    private Text ErrorTxt;
+    private Text errorTxt;
     
     @FXML
     private void handleLogin(ActionEvent event) throws IOException{
      Stage stage; 
      Parent root;
      
-     if(event.getSource()==LogInBtn){
-         String s = LogUser.getText()+":"+LogPass.getText();
-        if(Users.contains(s) == true){ 
+     if(event.getSource()==logInBtn){
+         String s = logUser.getText()+":"+logPass.getText();
+        if(users.contains(s) == true){ 
         //get reference to the button's stage         
-        stage=(Stage) LogInBtn.getScene().getWindow();
+        stage=(Stage) logInBtn.getScene().getWindow();
         //load up OTHER FXML document
         root = FXMLLoader.load(getClass().getResource("Selector.fxml"));
         //create a new scene with root and set the stage
@@ -66,22 +67,22 @@ public class LoginController implements Initializable {
         stage.show();
         }
         else{
-            ErrorTxt.setText("Username/Password Not Found");
+            errorTxt.setText("Username/Password Not Found");
             }
         }
     }
     
     @FXML
     private void handleRegister(ActionEvent event) throws IOException{
-     Stage stage; 
+     Stage stage = new Stage(); 
      Parent root;
      
-     if(event.getSource()==RegBtn){
-         if(RegFN.getLength() > 5 && RegUser.getLength() > 5 && RegPass1.getLength() > 8 && RegPass1.getText().equals(RegPass2.getText())){
-         String s = RegUser.getText()+":"+RegPass2.getText();
-         Users.add(s);
-        //get reference to the button's stage         
-        stage=(Stage) LogInBtn.getScene().getWindow();
+     if(event.getSource()==regBtn){
+         if(regFN.getLength() > 5 && regUser.getLength() > 5 && regPass1.getLength() > 8 && regPass1.getText().equals(regPass2.getText())){
+         String s = regUser.getText()+":"+regPass2.getText();
+         users.add(s);
+        //get reference to the button's stage
+        stage = (Stage) logInBtn.getScene().getWindow();
         //load up OTHER FXML document
         root = FXMLLoader.load(getClass().getResource("Selector.fxml"));
         //create a new scene with root and set the stage
@@ -90,7 +91,7 @@ public class LoginController implements Initializable {
         stage.show();   
         }
          else{
-             ErrorTxt.setText("Unable to Register:Missing Parameters");
+             errorTxt.setText("Unable to Register:Missing Parameters");
          }
     }
     }
@@ -99,7 +100,8 @@ public class LoginController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        Users.add("User:Pass");
+        List<String>users = new ArrayList<String>();
+        users.add("User:Pass");
     }
     
 }

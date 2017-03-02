@@ -27,18 +27,18 @@ import javafx.stage.Stage;
 public class SelectorController implements Initializable {
 
     @FXML
-    private Button FMN;
+    private Button fmn;
     @FXML
-    private Button FAT;
+    private Button fat;
     
     
     @FXML
-    private void FeedMeNow(ActionEvent event) throws IOException{
+    private void feedMeNow(ActionEvent event) throws IOException{
      Stage stage; 
      Parent root;
 
     //get reference to the button's stage         
-    stage=(Stage) FMN.getScene().getWindow();
+    stage=(Stage) fmn.getScene().getWindow();
     //load up OTHER FXML document
     root = FXMLLoader.load(getClass().getResource("FeedMeNow.fxml"));
     //create a new scene with root and set the stage
@@ -48,12 +48,12 @@ public class SelectorController implements Initializable {
     }
     
     @FXML
-    private void FindATable(ActionEvent event) throws IOException{
+    private void findATable(ActionEvent event) throws IOException{
      Stage stage; 
      Parent root;
 
     //get reference to the button's stage         
-    stage=(Stage) FMN.getScene().getWindow();
+    stage=(Stage) fat.getScene().getWindow();
     //load up OTHER FXML document
     root = FXMLLoader.load(getClass().getResource("SearchStart.fxml"));
     //create a new scene with root and set the stage

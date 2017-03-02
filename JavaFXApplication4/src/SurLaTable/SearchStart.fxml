@@ -12,14 +12,14 @@
    <children>
       <Pane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: gray;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Button fx:id="SearchBtn" layoutX="760.0" layoutY="303.0" mnemonicParsing="false" onAction="#setLocal" prefHeight="25.0" prefWidth="104.0" text="Find Restaurants" />
+            <Button fx:id="searchBtn" layoutX="760.0" layoutY="303.0" mnemonicParsing="false" onAction="#setLocal" prefHeight="25.0" prefWidth="104.0" text="Find Restaurants" />
             <Button layoutX="539.0" layoutY="479.0" mnemonicParsing="false" text="Find A Table">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-               <ChoiceBox fx:id="Cuisine" layoutX="586.0" layoutY="303.0" prefWidth="150.0" />
-               <DatePicker fx:id="Date" layoutX="586.0" layoutY="359.0" promptText="Choose A Day" />                  
+               <ChoiceBox fx:id="cuisine" layoutX="586.0" layoutY="303.0" prefWidth="150.0" />
+               <DatePicker fx:id="date" layoutX="586.0" layoutY="359.0" promptText="Choose A Day" />                  
                <Text disable="true" fill="MAROON" layoutX="19.0" layoutY="122.0" stroke="BLACK" strokeType="OUTSIDE" text="Sur La Table" textAlignment="CENTER" wrappingWidth="1161.7548828125">
                   <font>
                      <Font name="French Script MT" size="130.0" />
@@ -41,7 +41,7 @@
                      <Font name="Times New Roman" size="28.0" />
                   </font>
                </Label>
-               <ChoiceBox fx:id="Local" layoutX="586.0" layoutY="416.0" prefWidth="150.0" />
+               <ChoiceBox fx:id="local" layoutX="586.0" layoutY="416.0" prefWidth="150.0" />
                <Text fill="MAROON" layoutX="355.0" layoutY="263.0" stroke="BLACK" strokeType="OUTSIDE" text="What Table are you Looking For?">
                   <font>
                      <Font name="Times New Roman" size="36.0" />
