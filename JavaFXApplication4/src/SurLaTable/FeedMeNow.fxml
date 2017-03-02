@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
-<?import javafx.scene.control.cell.*?> 
+<?import javafx.scene.control.cell.*?>
 <?import javafx.collections.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.geometry.Insets?>
-<?import SurLaTable.Food?>
-<?import javafx.collections.*?> 
+<?import SurLaTable.*?>
+<?import javafx.collections.*?>
 <?import javafx.geometry.Insets?>
 <?import java.lang.*?>
 <?import javafx.scene.*?>
@@ -19,46 +20,60 @@
 <?import javafx.scene.control.cell.*?>
 <?import javafx.scene.layout.*?>
 
-
-<GridPane alignment="center" hgap="10.0" vgap="10.0" fx:controller="SurLaTable.FeedMeNowController"
-          xmlns:fx="http://javafx.com/fxml">
-    <padding>
-        <Insets bottom="10.0" left="10.0" right ="10.0" top="10.0"/>
-    </padding>
-        
-    <Label text="Sur La Table" GridPane.columnIndex="0" GridPane.rowIndex="0" 
-            style="-fx-font: NORMAL 20 Tahoma;"/>
- 
-    <TableView fx:id="tableView" GridPane.columnIndex="0" 
-                GridPane.rowIndex="1">
-        <columns>
-            <TableColumn fx:id="RestCol" text="Restaurant" prefWidth="100">
-                <cellValueFactory>
-                    <PropertyValueFactory property="name" />
-                </cellValueFactory>
-            </TableColumn>
-            <TableColumn text="Cuisine" prefWidth="100">
-                <cellValueFactory>
-                    <PropertyValueFactory property="cuisine" />
-                </cellValueFactory>
-            </TableColumn>
-            <TableColumn text="Hours" prefWidth="200">
-                <cellValueFactory>
-                    <PropertyValueFactory property="time" />
-                </cellValueFactory>
-            </TableColumn>
-            <TableColumn text="Price Range" prefWidth="200">
-                <cellValueFactory>
-                    <PropertyValueFactory property="price" />
-                </cellValueFactory>
-            </TableColumn>
-        </columns>    
-        <items>
-            <FXCollections fx:factory="observableArrayList">
-                <Food name="Taco Bell" cuisine="Mexican" time="7AM-5AM" price="$" />      
-            </FXCollections>
-        </items>
-    
-    </TableView>
-
-</GridPane>
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="SurLaTable.FeedMeNowController">
+   <children>
+       <Pane prefHeight="420.0" prefWidth="1200.7548828125" style="-fx-background-color: gray;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+          <children>
+          <Text disable="true" fill="MAROON" layoutX="19.0" layoutY="122.0" stroke="BLACK" strokeType="OUTSIDE" text="Sur La Table" textAlignment="CENTER" wrappingWidth="1161.7548828125">
+              <font>
+                  <Font name="French Script MT" size="130.0" />
+              </font>
+          </Text>
+          <Line endX="1160.0" fill="BLACK" layoutX="20.0" layoutY="175.0" />
+       
+          <TableView fx:id="tableView" layoutX="363.0" layoutY="232.0" prefHeight="400.0" prefWidth="532.0">
+              <columns>
+                  <TableColumn fx:id="RestCol" prefWidth="156.0" text="Restaurant">
+                      <cellValueFactory>
+                          <PropertyValueFactory property="name" />
+                      </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="120.0" text="Cuisine">
+                      <cellValueFactory>
+                          <PropertyValueFactory property="cuisine" />
+                      </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="103.0" text="Hours">
+                      <cellValueFactory>
+                          <PropertyValueFactory property="time" />
+                      </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="152.0" text="Price Range">
+                      <cellValueFactory>
+                          <PropertyValueFactory property="price" />
+                      </cellValueFactory>
+                  </TableColumn>
+              </columns>    
+              <items>
+                  <FXCollections fx:factory="observableArrayList">
+                      <Food name="Taco Bell" cuisine="Mexican Fast Food" time="7AM-5AM" price="\$"  />
+                      <Food name="Jimmy John's" cuisine="Cold Sandwhiches" price="\$" time="11AM-2AM"/>
+                      <Food name="Burger King" cuisine="American Fast Food" price="\$" time="6AM-12AM" />
+                      <Food name="Main St. Pub" cuisine="American" price="\$$" time="11AM-2AM" />
+                      <Food name="Jet's Pizza" cuisine="Italian Fast Food" price="\$$" time="11AM-10PM" />
+                      <Food name="Tim Horton's" cuisine="Light Fare" price="\$" time="6AM-10PM" />
+                      <Food name="McDonalds" cuisine="American Fast Food" price="\$" time="6AM-11PM" />
+                      <Food name="Aroy Thai" cuisine="Thai" price="\$" time="11AM-9PM" />
+                      <Food name="Peppino's" cuisine="Italian" price="\$$" time="11AM-11PM" />
+                      <Food name="Mancino's" cuisine="Italian" price="\$$" time="11AM-9PM" />      
+                  </FXCollections>
+              </items>
+          </TableView>
+          </children>    
+           
+       <padding>
+           <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+       </padding>
+       </Pane>
+   </children>
+</AnchorPane>
